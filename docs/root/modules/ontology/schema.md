@@ -903,6 +903,7 @@ It generalizes concepts like GitHub Repositories and GitLab Projects.
 | _ont_default_branch | The default branch name (e.g., "main", "master"). |
 | _ont_public | Whether the repository is publicly accessible. |
 | _ont_archived | Whether the repository is archived (read-only). |
+| _ont_fork | Whether the repository was created as a fork of another repository. **Absence is not `false`**: only GitHub populates this today, so the field is left unset on GitLabProject (state unknown, not "not a fork"). GitLab exposes the same concept via `forked_from_project`, so this can be filled in by any provider that models it. |
 
 
 ### NetworkAccessControl

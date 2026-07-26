@@ -79,6 +79,8 @@ Representation of a single GitHubRepository (repo) [repository object](https://d
 | url | Web URL for viewing the repo
 | sshurl | URL for access the repo via SSH
 | updatedat | GitHub timestamp for last time repo was modified |
+| fork | True if the repo is a fork of another repo |
+| parent | Web URL of the repo that this repo was forked from, if any. This is usually a repo outside of the synced organizations, so there is generally no node in the graph for it. Note also that a fork whose upstream repo has been deleted has `fork` set to True but no `parent` |
 
 
 #### Relationships

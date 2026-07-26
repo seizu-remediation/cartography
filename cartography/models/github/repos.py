@@ -32,6 +32,8 @@ class GitHubRepositoryNodeProperties(CartographyNodeProperties):
     url: PropertyRef = PropertyRef("url", extra_index=True)
     sshurl: PropertyRef = PropertyRef("sshurl", extra_index=True)
     updatedat: PropertyRef = PropertyRef("updatedat")
+    fork: PropertyRef = PropertyRef("fork")
+    parent: PropertyRef = PropertyRef("parent")
 
 
 @dataclass(frozen=True)
